@@ -6,6 +6,15 @@ let other = document.querySelector(".other");
 
 button.addEventListener("click", function() {
     let state = document.querySelector(".state").value;
+    if (state ==="california"){
+        californiaMessage.style.display="block";
+    } else if (state ==="illinois"){
+        illinoisMessage.style.display="block";
+    } else if (state === "newyork"){
+        newyorkMessage.style.display="block";
+    } else {
+        other.style.display="block";
+    }
 
     // CODE ALONG
     // 1. Write an if statement that would display the california message if a user says they're from "California".
